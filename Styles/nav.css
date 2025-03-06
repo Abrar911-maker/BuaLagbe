@@ -1,0 +1,44 @@
+nav > ul{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+nav li{
+    list-style: none;
+    margin-right: 10pc;
+}
+
+.backgroundhov:hover{
+    background-color:dimgray;
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+#register:hover{
+    background-color:dimgray;
+}
+
+#login:hover{
+    background-color:dimgray;
+}
+#whitestick{
+    color: white;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color:black;
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: grid;
+    text-align: center;
+}
