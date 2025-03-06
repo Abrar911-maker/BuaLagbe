@@ -32,7 +32,7 @@ nav li a{
 body{
     margin: 0px;
     padding: 0px;
-    background-color:black;
+    background-color:rgb(103, 95, 154);
 }
 
 h1{
@@ -41,4 +41,25 @@ h1{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: grid;
     text-align: center;
+}
+
+h2{
+    color: white;
+    display: grid;
+    text-align: center;
+    margin-top: 150px;
+
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    height: 100px;            
+    padding: 0px;
+    margin-top: 50px;
+}
+.logo-container img {
+    width: 200px; 
+    height: auto;
 }
