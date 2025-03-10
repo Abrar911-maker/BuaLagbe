@@ -5,6 +5,11 @@
     max-width:100%;
     height: 78vh;
     overflow: hidden;
+    border-top: 7px solid purple;
+    border-bottom: 7px solid purple;
+    border-radius: 30px;
+    box-shadow: 0 0 60px rgb(241, 55, 238);
+    border-image: url('/Images/Backround\ image\ 2.jpg');
 }
 
 /* Slides (Images) */
@@ -46,7 +51,7 @@
     height: 10px;
     width: 10px;
     margin: 0 5px;
-    background-color: rgb(123, 15, 123);
+    background-color: rgb(245, 76, 174);
     border-radius: 50%;
     display: inline-block;
     cursor: pointer;
@@ -58,11 +63,16 @@
 
 .caption {
     position: absolute;
-    top: 10px; /* Adjusts the distance from the top */
+    bottom: 10px; /* Adjusts the distance from the top */
     left: 10px; /* Adjusts the distance from the left */
-    background-color: rgba(255, 255, 255, 0.4); /* Optional: adds a semi-transparent background */
+    background-color: rgba(246, 78, 255, 0.4); /* Optional: adds a semi-transparent background */
     color: black; /* Text color */
     padding: 5px 10px; /* Optional: adds some padding around the text */
     font-size: 50px; /* Text size */
     font-weight: bold; /* Optional: makes text bold */
    }
+
+.caption a{
+    text-decoration: none;
+    color: black;
+}   
