@@ -29,18 +29,14 @@ nav li a{
     color: white;
 }
 
-body{
-    margin: 0px;
-    padding: 0px;
-    background-color:rgb(103, 95, 154);
-}
-
 h1{
     font-size: 50px;
     color: white;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: grid;
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
 
 h2{
@@ -63,3 +59,20 @@ h2{
     width: 200px; 
     height: auto;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/Images/Backround\ image\ 2.jpg'); /* Change to your image path */
+    background-size: cover; /* Makes image cover the whole page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+

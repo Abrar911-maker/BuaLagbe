@@ -5,16 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="Styles/nav.css">
-
+    <link rel="stylesheet" href="Styles/footer.css">
+     <link rel="stylesheet" href="Styles/silde.css">
     <style>
         
     </style>
 
 </head>
 <body>
+    <!--Home Header -->
     <header>
+        <div class="logo-container">
+            <img class="logo" src="Images/BuaLagbe.logo.png" alt="BuaLagbe.logo"><br><h2>BuaLagbe.com</h2>
+        </div>
         <section>
-            <h1>Hi, Thanks for visiting our website- "Bua Lagbe"</h1>
+            <h1>Thanks for visiting our website- "Bua Lagbe"</h1>
         </section>
         <nav>
             <ul>
@@ -24,6 +29,154 @@
                 <li><a href="login.html"id="login">Login</a> <span id="whitestick">|</span> <a href="register.html"id="register">Register</a></li>
             </ul>
          </nav>
-    
+         </Header>
+
+           <!-- Home main -->
+        
+            <main>
+
+                <!-- Slideshow -->
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                        <img src="Images/Silde cover Images/Welcome_to_Bua_lagbe_V1.jpeg" alt="Slide 1">
+                        <div class="caption">Welcome to BuaLagbe.com</div>
+                    </div>
+                    <div class="slide fade">
+                        <img src="Images/Silde cover Images/general_maid_V1.jpeg" alt="Slide 2">
+                        <div class="caption">General Maid</div>
+                    </div>
+                    <div class="slide fade">
+                        <img src="Images/Silde cover Images/cooking_V1.jpeg" alt="Slide 3">
+                        <div class="caption">Cooking</div>
+                    </div>    
+                        <div class="slide fade">    
+                        <img src="Images/Silde cover Images/cleaning_V1.jpeg" alt="Slide 4">
+                        <div class="caption">Cleaning</div>
+                    </div>
+            
+                    <!-- Dots/Indicators -->
+                    <div class="dots">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+            
+                <script>
+                    let slideIndex = 0;
+                    showSlides();
+            
+                    function showSlides() {
+                        let slides = document.querySelectorAll(".slide");
+                        let dots = document.querySelectorAll(".dot");
+            
+                        for (let i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slideIndex++;
+            
+                        if (slideIndex > slides.length) {
+                            slideIndex = 1;
+                        }
+            
+                        slides[slideIndex - 1].style.display = "block";
+            
+                        // Update active dot
+                        dots.forEach(dot => dot.classList.remove("active"));
+                        dots[slideIndex - 1].classList.add("active");
+            
+                        setTimeout(showSlides, 4000); // Change image every 5 seconds
+                    }
+            
+                    function currentSlide(n) {
+                        slideIndex = n - 1;
+                        showSlides();
+                    }
+                </script>
+
+                <!-- Amazed image -->
+                <section>
+                    <div style="display: flex; justify-content: space-between; align-items: center; width: 60%; max-width: auto; margin: auto; padding: 0px; margin-top: 5px;">
+                    
+                        <!-- Left side logo -->
+                        <figure>
+                        <img src="Images/BuaLagbe.logo.png" alt="" style="width: 200px;">
+                        <figcaption style="margin-left: 32px; margin-top: 15px; font-size:x-large; color: white;" >BuaLagbe.com</figcaption>
+                        </figure>
+                            
+                
+                        <!-- Right side Image -->
+                        <img src="Images/Amazed.image.png" alt="Right Image" style="width: 485px; height: auto; object-fit:contain; align-content: flex-end; margin-top: 200px;">
+                
+                    </div>
+                </section>
+
+        <!-- article for  -->
+<section>
+    <div style="display: flex; justify-content: space-between; align-items: center; width: 98%; max-width: 98%; margin: auto; padding: 0px; margin-top:0.5px; border: 4px solid black;"> 
+
+        <article style="font-size:xx-large;background-image: url('Images/Backround\ image\ 2.jpg'); background-size: cover; background-position: center; padding: 30px; color: white; "><b>At "Bua Lagbe", we understand that life can get busy, and keeping up with daily home tasks can sometimes feel overwhelming. That's why we offer a Homekeeping Service designed to make your life easier and your home more comfortable. Our professional team provides reliable, efficient, and personalized care for all your household needs.
+
+        From cleaning, cooking, and laundry to grocery shopping, organizing, and more, our experienced homekeepers are here to support you every step of the way. Whether you need help on a daily basis or just once in a while, we offer flexible services tailored to fit your schedule and lifestyle.</b></article>
+    </div>
+</section>
+</main>
+
+
+<!--Home footer -->
+<footer>
+    <div class="footer-container">
+        
+        <!-- About Us -->
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>We are dedicated to providing top-quality services and ensuring customer satisfaction. Stay connected with us for the latest updates.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section">
+            <h3>Contact Info</h3>
+            <ul>
+                <li>Email: support@bualagbe.com</li>
+                <li>Phone: +880202135423</li>
+                <li>Address: 3-B,122,lane-2 #A gulshan 2, Dhaka-1212,Banglasgesh.</li>
+            </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fa fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        &copy; 2025 bualagbe.com | All Rights Reserved | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
+    </div>
+</footer>
+
+<!-- FontAwesome Icons (For Social Media) -->
+<script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-CDN.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

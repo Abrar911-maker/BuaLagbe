@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="Styles/nav.css">
+    <link rel="stylesheet" href="Styles/footer.css">
 <style>
     
     
@@ -14,14 +15,21 @@
         padding: 4px;
     }
     button{
+        display: inline-block;
         background-color: rgb(21, 204, 210);
         border: 3px solid black;
-        margin: 10px;
+        margin: 0px;
+        cursor: pointer;
     }
+    .grid-container :hover{
+        background-color:dimgray;
+    }
+    
 
     input{
         background-color:rgb(227, 254, 250);
         margin: 8px;
+        border: 2px solid black;
     }
 
 
@@ -36,7 +44,7 @@
     <img class="logo" src="Images/BuaLagbe.logo.png" alt="BuaLagbe.logo"><br><h2>BuaLagbe.com</h2>
 </div>
     <section>
-        <h1>Hi, Thanks for visiting our website- "Bua Lagbe"</h1>
+        <h1>Thanks for visiting our website- "Bua Lagbe"</h1>
     </section>
  <nav>
     <ul>
@@ -49,55 +57,129 @@
 </header>
 
 
-<!-- Main -->
+<!--"Register" Main -->
  <main>
- <section>
-    <div style="display: flex; justify-content: space-between; align-items: center; width: 97%; max-width: 1300px; margin: auto; padding: 0px; background-image: url('Images/Backround\ image\ 2.jpg');background-size: 1300px;background-position: center;">
     
-        <!-- Left: Form -->
-        <form style="width: 40%;">
+ <section>
+    <div style="display: flex; justify-content: space-between; align-items: center; width: 95%; max-width: auto; margin: auto; padding: 0px; margin-top: 40px; border: 4px solid black;">
+    
+        <!--Register Form -->
+        <form style="width: 28%; padding-left: 30px; ">
             <label for="name" style="font-size: 20px;"><b>Name:</b></label>
-            <input type="text" id="name" name="name" required style="width: 100%; height: 40px; font-size: 16px;">
+            <input type="text" id="name" name="name" required style="width: 100%; height: 35px; font-size: 16px;">
     
             <label for="email" style="font-size: 20px;"><b>Email:</b></label>
-            <input type="email" id="email" name="email" required style="width: 100%; height: 40px; font-size: 16px;">
+            <input type="email" id="email" name="email" required style="width: 100%; height: 35px; font-size: 16px;">
 
             <label for="password" style="font-size: 20px;"><b>Password:</b></label>
-            <input type="password" id="password" name="password" required style="width: 100%; height: 40px; font-size: 16px;">
+            <input type="password" id="password" name="password" required style="width: 100%; height: 35px; font-size: 16px;">
 
             <label for="confirm password" required style="font-size: 20px;"><b>Confirm Password:</b></label>
-            <input type="password" id="confirm password" name="confirm password" style="width: 100%; height: 40px; font-size: 16px;">
-            
-            
+            <input type="password" id="confirm password" name="confirm password" style="width: 100%; height: 35px; font-size: 16px;">
 
             <!-- Buttons -->
-            <button type="submit" style="width: 100%; height: 45px; font-size: 18px; margin-top: 10px;"><b>Register</b></button>
-            <button type="reset" style="width: 100%; height: 45px; font-size: 18px; margin-top: 10px;"><b>Reset</b></button>
+             <div class="grid-container">
+            <button type="submit" style="width: 80%; height: 40px; font-size: 18px; margin-top: 10px; margin-left: 40px;"><b>Register</b></button>
+            <button type="reset" style="width: 80%; height: 40px; font-size: 18px; margin-top: 10px; margin-left: 40px;"><b>Reset</b></button>
+             </div>
         </form>
     
-        <!-- Right: Image -->
-        <img src="Images/Hi.png" alt="Right Image" style="width: 500px; height: auto; object-fit:contain; align-content: flex-end;">
+        <!-- Right side:Hi Image -->
+        <img src="Images/Hi.png" alt="Right Image" style="width: 650px; height: auto; object-fit:contain; align-content: flex-end;">
 
     </div>
 </section>
 
-<!-- article for  -->
+<!-- Instructions for Registration  -->
 <section>
-    <div style="display: flex; justify-content: space-between; align-items: center; width: 98%; max-width: 1300px; margin: auto; margin-top: 9px; padding: 0px; border: 4px solid black; background-color:;">
+    <div style="display: flex; justify-content: space-between; align-items: center; width: 95%; max-width: 97%; margin: auto; margin-top: 9px; padding: 0px; border: 4px solid black;"> 
 
-        <article style="font-size:xx-large;background-image: url('Images/Backround\ image\ 2.jpg'); background-size: cover; background-position: center; padding: 30px;"><b>At "Bua Lagbe", we understand that life can get busy, and keeping up with daily home tasks can sometimes feel overwhelming. That's why we offer a Homekeeping Service designed to make your life easier and your home more comfortable. Our professional team provides reliable, efficient, and personalized care for all your household needs.
+        <article style="font-size:xx-large;background-image: url('Images/Backround\ image\ 2.jpg'); background-size: cover; background-position: center; padding: 30px; padding-left: 40px; color: white; "><caption>📌Instructions for Registration:</caption>
+            <ul>
+               <li>Provide Accurate Information – Ensure that all details entered (name, email, phone number, etc.) are correct and up to date.</li>
+               <li>Use a Strong Password – Your password should be at least 8 characters long, including uppercase, lowercase, numbers, and special characters.</li>
+               <li>Secure Your Account – Do not share your password or login details with anyone.</li>
+               <li>Complete All Required Fields – Fields marked with (*) are mandatory. Your registration will not proceed if any required fields are left blank.</li>
+               <li>Contact our support team at <a href="">support@bualagbe.com</a> for any assistance regarding the registration process.</li> 
+            </ul>
 
-        From cleaning, cooking, and laundry to grocery shopping, organizing, and more, our experienced homekeepers are here to support you every step of the way. Whether you need help on a daily basis or just once in a while, we offer flexible services tailored to fit your schedule and lifestyle.</b></article>
+        </article>
     </div>
 
+</section>
+<section>
+    <div style="display: flex; justify-content: space-between; align-items: center; width: 95%; max-width: auto; margin: auto; padding: 0px; margin-top: 40px; ">
+    
+        <!-- Left side logo -->
+        <figure>
+        <img src="Images/BuaLagbe.logo.png" alt="" style="width: 350px; height: auto; padding-left: 20px; object-fit:contain; align-content: flex-start;">
+        <figcaption style="font-size: xx-large; color: white; margin-left: 100px; margin-top: 10px; ">BuaLagbe.com</figcaption>
+    </figure>
+
+
+    
+        <!-- Right side Image -->
+        <img src="Images/Amazed.image.png" alt="Right Image" style="width: 700px; height: auto; object-fit:contain; align-content: flex-end; margin-top: 200px;">
+
+    </div>
 </section>
 
  </main>
     
 
- <!-- Main footer -->
+ <!-- "Register" footer -->
   <footer>
+    <div class="footer-container">
+        
+        <!-- About Us -->
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>We are dedicated to providing top-quality services and ensuring customer satisfaction. Stay connected with us for the latest updates.</p>
+        </div>
 
-  </footer>
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section">
+            <h3>Contact Info</h3>
+            <ul>
+                <li>Email: support@bualagbe.com</li>
+                <li>Phone: +880202135423</li>
+                <li>Address: 3-B,122,lane-2 #A gulshan 2, Dhaka-1212,Banglasgesh.</li>
+            </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fa fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        &copy; 2025 bualagbe.com | All Rights Reserved | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
+    </div>
+</footer>
+
+<!-- FontAwesome Icons (For Social Media) -->
+<script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-CDN.js" crossorigin="anonymous"></script>
+  
 </body>
 </html>
