@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="Styles/footer.css">
      <link rel="stylesheet" href="Styles/silde.css">
      <link rel="stylesheet" href="Styles/border.css">
+     <link rel="stylesheet" href="Styles/card.css">
     <style>
         
     </style>
@@ -81,41 +82,39 @@
                         <span class="dot" onclick="currentSlide(6)"></span>
                         <span class="dot" onclick="currentSlide(7)"></span>
                     </div>
+                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
                 </div>
-            
-                <script>
-                    let slideIndex = 0;
-                    showSlides();
-            
-                    function showSlides() {
-                        let slides = document.querySelectorAll(".slide");
-                        let dots = document.querySelectorAll(".dot");
-            
-                        for (let i = 0; i < slides.length; i++) {
-                            slides[i].style.display = "none";
-                        }
-                        slideIndex++;
-            
-                        if (slideIndex > slides.length) {
-                            slideIndex = 1;
-                        }
-            
-                        slides[slideIndex - 1].style.display = "block";
-            
-                        // Update active dot
-                        dots.forEach(dot => dot.classList.remove("active"));
-                        dots[slideIndex - 1].classList.add("active");
-            
-                        setTimeout(showSlides, 3000); // Change image every 5 seconds
-                    }
-            
-                    function currentSlide(n) {
-                        slideIndex = n - 1;
-                        showSlides();
-                    }
-                </script>
+                
 
-                 <!-- article for  -->
+<script>
+    let slideIndex = 0;
+    showSlides(slideIndex);
+
+// Function to Change Slide
+function changeSlide(n) {
+    showSlides(slideIndex += n);
+}
+
+// Function to Show Slides
+function showSlides(n) {
+    let slides = document.getElementsByClassName("slide");
+
+    if (n >= slides.length) { slideIndex = 0; }  // Loop back to first slide
+    if (n < 0) { slideIndex = slides.length - 1; } // Loop to last slide
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slides[slideIndex].style.display = "block";  
+}
+
+// Auto Play Slideshow (Optional)
+setInterval(() => changeSlide(1), 3000); // Change slide every 3 seconds
+</script>
+
+
+<!-- article for  -->
 <section class="borderstyle">
     <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 100%; margin: auto; padding: 0px;"> 
 
@@ -125,22 +124,45 @@
     </div>
 </section>
 
-                <!-- Amazed image -->
-                <section>
-                    <div style="display: flex; justify-content: space-between; align-items: center; width: 60%; max-width: auto; margin: auto; padding: 0px; margin-top: 5px;">
+
+<!-- Card content -->
+
+<div class="card-container">
+    <div class="card">
+        <img src="Images/BuaLagbe.logo.png" alt="Card 1">
+        <div class="card-content">
+            <h2>Card 1</h2>
+            <p>Short description for card 1.</p>
+            <a href="about.html" class="btn">Read More</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="Images/Hi.png" alt="Card 2">
+        <div class="card-content">
+            <h2>Card 2</h2>
+            <p>Short description for card 2.</p>
+            <a href="services.html" class="btn">Read More</a>
+        </div>
+    </div>
+</div>
+
+<!-- Amazed image -->
+<section>
+    <div style="display: flex; justify-content: space-between; align-items: center; width: 60%; max-width: auto; margin: auto; padding: 0px; margin-top: 5px;">
                     
-                        <!-- Left side logo -->
-                        <figure>
-                        <img src="Images/BuaLagbe.logo.png" alt="" style="width: 200px;">
-                        <figcaption style="margin-left: 32px; margin-top: 15px; font-size:x-large; color: white;" >BuaLagbe.com</figcaption>
+    <!-- Left side logo -->
+    <figure>
+        <img src="Images/BuaLagbe.logo.png" alt="" style="width: 200px;">
+        <figcaption style="margin-left: 32px; margin-top: 15px; font-size:x-large; color: white;" >BuaLagbe.com</figcaption>
                         </figure>
                             
                 
-                        <!-- Right side Image -->
-                        <img src="Images/Amazed.image.png" alt="Right Image" style="width: 485px; height: auto; object-fit:contain; align-content: flex-end; margin-top: 200px;">
+    <!-- Right side Image -->
+    <img src="Images/Amazed.image.png" alt="Right Image" style="width: 485px; height: auto; object-fit:contain; align-content: flex-end; margin-top: 200px;">
                 
-                    </div>
-                </section>
+    </div>
+    </section>
 </main>
 
 

@@ -1,0 +1,62 @@
+/* Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.card {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(247, 33, 208, 0.2);
+    overflow: hidden;
+    background: rgb(181, 143, 223);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Image Inside Card */
+.card img {
+    width: 70%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Card Content */
+.card-content {
+    padding: 15px;
+}
+
+/* Card Title */
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Card Description */
+.card p {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #0e3055;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+/* Hover Effects */
+.card:hover {
+    transform: scale(1.05);
+}
+
+.btn:hover {
+    background: #0056b3;
+}

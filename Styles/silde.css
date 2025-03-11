@@ -1,9 +1,10 @@
  /* Slideshow container */
  .slideshow-container {
-    margin-top: 40px;
+    margin-top: 70px;
+    margin-left: 14px;
     position: relative;
-    max-width:100%;
-    height: 90vh;
+    max-width:98%;
+    height: 100vh;
     overflow: hidden;
     border-top: 7px solid purple;
     border-bottom: 7px solid purple;
@@ -26,7 +27,7 @@
     left: 50%;
     transform: translate(-50%, -50%); /* Moves image to center */
     width: 100%;
-    height: 600px;
+    height: 700px;
 }
 
 /* Fade animation */
@@ -70,10 +71,39 @@
     padding: 5px 10px; /* Optional: adds some padding around the text */
     font-size: 50px; /* Text size */
     font-weight: bold; /* Optional: makes text bold */
-    border-radius: 20px;
+    border-radius:20px;
    }
 
 .caption a{
     text-decoration: none;
     color: black;
 }   
+
+/* Left and Right Arrow Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    user-select: none;
+}
+
+/* Positioning Arrows */
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Hover Effect */
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
