@@ -1,23 +1,24 @@
 /* Card Container */
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    justify-content: center;
+    padding: 20px;
 }
+
+/* Individual Card */
 .card {
-    width: 300px;
+    background: white;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(247, 33, 208, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    background: rgb(181, 143, 223);
     text-align: center;
     transition: transform 0.3s ease;
 }
 
-/* Image Inside Card */
+/* Card Image */
 .card img {
-    width: 70%;
+    width: 100%;
     height: 200px;
     object-fit: cover;
 }
@@ -29,14 +30,14 @@
 
 /* Card Title */
 .card h2 {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
 /* Card Description */
 .card p {
     font-size: 14px;
-    color: #ffffff;
+    color: #555;
     margin-bottom: 15px;
 }
 
@@ -44,7 +45,7 @@
 .btn {
     display: inline-block;
     padding: 10px 15px;
-    background: #0e3055;
+    background: #007bff;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -59,4 +60,23 @@
 
 .btn:hover {
     background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
