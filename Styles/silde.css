@@ -28,6 +28,7 @@
     transform: translate(-50%, -50%); /* Moves image to center */
     width: 100%;
     height: 800px;
+    border-radius: 20px;
 }
 
 /* Fade animation */
@@ -62,10 +63,16 @@
     background-color: rgb(123, 15, 123);
 }
 
+.caption :hover{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(235, 136, 233);;
+}
 .caption {
     position: absolute;
-    bottom: 10px; /* Adjusts the distance from the top */
-    left: 10px; /* Adjusts the distance from the left */
+    top: 40px; /* Adjusts the distance from the top */
+    left: 20px; /* Adjusts the distance from the left */
     background-color: rgba(246, 78, 255, 0.4); /* Optional: adds a semi-transparent background */
     color: black; /* Text color */
     padding: 5px 10px; /* Optional: adds some padding around the text */
@@ -84,10 +91,9 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 30px;
+    font-size: 50px;
     font-weight: bold;
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
+    color: dimgray;
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 5px;
@@ -105,5 +111,5 @@
 
 /* Hover Effect */
 .prev:hover, .next:hover {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(246, 78, 255, 0.4);
 }

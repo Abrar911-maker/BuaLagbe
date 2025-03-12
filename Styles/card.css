@@ -8,7 +8,7 @@
 
 /* Individual Card */
 .card {
-    background: white;
+    background: rgb(246, 99, 189);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -19,33 +19,34 @@
 /* Card Image */
 .card img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
 }
 
 /* Card Content */
 .card-content {
-    padding: 15px;
+    padding:10px;
+    
 }
 
 /* Card Title */
 .card h2 {
-    font-size: 18px;
+    font-size: 50px;
     margin-bottom: 10px;
 }
 
 /* Card Description */
 .card p {
-    font-size: 14px;
-    color: #555;
+    font-size: 30px;
+    color: black;
     margin-bottom: 15px;
 }
 
 /* Button */
 .btn {
     display: inline-block;
-    padding: 10px 15px;
-    background: #007bff;
+    padding: 15px 20px;
+    background: #4a28e1;
     color: white;
     text-decoration: none;
     border-radius: 5px;

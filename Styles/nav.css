@@ -1,7 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+ position: relative;
+ overflow: hidden;
+ background-color: rgb(162, 79, 239);
+ border-radius: 18px; 
+ box-shadow: 0 0 60px rgb(241, 55, 238);
+ border-top: 13px solid purple;
+ border-bottom: 13px solid purple;
+ border-image: url('/Images/Backround\ image\ 2.jpg');
+ margin-bottom: 0px;
+}
+
 nav > ul{
     display: flex;
     justify-content: center;
     font-size: xx-large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 nav li{
@@ -10,7 +29,9 @@ nav li{
 }
 
 .backgroundhov:hover{
-    background-color:dimgray;
+    background-color:rgb(120, 32, 130);
+    height: 37px;
+    border-radius: 5px;
 }
 
 nav li a{
@@ -19,31 +40,40 @@ nav li a{
 }
 
 #register:hover{
-    background-color:dimgray;
+    background-color:rgb(120, 32, 130);
+    height: 37px;
+    border-radius: 5px;
+}
+
+#login{
+margin-left: 400px;
+    
 }
 
 #login:hover{
-    background-color:dimgray;
+    background-color:rgb(120, 32, 130);
+    height: 37px;
+    border-radius: 5px;
 }
 #whitestick{
-    color: white;
+    color: black;
 }
 
 h1{
-    font-size: 50px;
+    font-size: 60px;
     color: white;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: grid;
     text-align: center;
     margin-top: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 h2{
-    color: white;
+    color: black;
     display: grid;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 140px;
 
 }
 
@@ -53,19 +83,12 @@ h2{
     align-items: center;      
     height: 80px;            
     padding: 0px;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 .logo-container img {
-    width: 150px; 
+    width: 200px; 
     height: auto;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+} 
 body {
     background-image: url('/Images/Backround\ image\ 2.jpg'); /* Change to your image path */
     background-size: cover; /* Makes image cover the whole page */
@@ -75,4 +98,5 @@ body {
     margin: 0;
     padding: 0;
 }
+
 
