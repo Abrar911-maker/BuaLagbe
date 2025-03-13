@@ -6,6 +6,7 @@
 
 nav{
  position: relative;
+ height: 70px;
  overflow: hidden;
  background-color: rgb(162, 79, 239);
  border-radius: 18px; 
@@ -46,7 +47,7 @@ nav li a{
 }
 
 #login{
-margin-left: 400px;
+margin-left: 230px;
     
 }
 
