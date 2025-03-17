@@ -4,7 +4,7 @@
     margin-left: 14px;
     position: relative;
     max-width:98%;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
     border-top: 7px solid purple;
     border-bottom: 7px solid purple;
@@ -26,16 +26,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Moves image to center */
-    width: 100%;
+    width: 99%;
     height: 800px;
     border-radius: 20px;
 }
-
-/* Fade animation */
-.fade {
-    animation: fadeEffect 4s ease-in-out infinite;
-}
-
 @keyframes fadeEffect {
     from { opacity: 5; }
     to { opacity: 1; }

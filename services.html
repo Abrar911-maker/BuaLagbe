@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="Styles/footer.css">
     <link rel="stylesheet" href="Styles/">
     <link rel="stylesheet" href="Styles/card.css">
+    <link rel="stylesheet" href="Styles/banner.css">
 <style>
     
 </style>
@@ -22,11 +23,34 @@
         <section>
             <h1>Thanks for visiting our website-"BuaLagbe.com"</h1>
         </section>
+
+        <!-- Banner -->
+        <div class="banner-container">
+          <div class="banner-text" id="scrollingText">💁‍♀️ At[BuaLagbe.com], we provide professional and trustworthy housemaids for all your cleaning and household needs. From daily chores to deep cleaning, we ensure your home stays fresh and organized.
+          Book now for a hassle-free, spotless home!💁‍♀️</div>
+      </div>
+      <script>
+          const text = document.getElementById("scrollingText");
+          let position = window.innerWidth; // Start off-screen
+  
+          function scrollText() {
+              position -= 2; // Speed of scrolling
+              if (position < -text.offsetWidth) {
+                  position = window.innerWidth; // Reset position
+              }
+              text.style.left = position + "px";
+              requestAnimationFrame(scrollText);
+          }
+  
+          scrollText();
+      </script>
+
         <nav>
             <ul>
                 <li class="backgroundhov"><a href="home.html">Home</a></li>
                 <li class="backgroundhov"><a href="about.html">About</a></li>
                 <li class="backgroundhov"><a href="services.html">Services</a></li>
+                <li class="backgroundhov"><a href="booking.html">Boking now🗓️</a></li>
                 <li><a href="login.html"id="login">Login</a> <span id="whitestick">|</span> <a href="register.html"id="register">Register</a></li>
             </ul>
          </nav>

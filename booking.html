@@ -9,6 +9,7 @@
      <link rel="stylesheet" href="Styles/silde.css">
      <link rel="stylesheet" href="Styles/border.css">
      <link rel="stylesheet" href="Styles/card.css">
+     <link rel="stylesheet" href="Styles/banner.css">
 
      <style>
     
@@ -56,6 +57,27 @@
     <h1>Thanks for visiting our website-"BuaLagbe.com"</h1>
 </section>
 
+<!-- Banner -->
+<div class="banner-container">
+    <div class="banner-text" id="scrollingText">💁‍♀️ At[BuaLagbe.com], we provide professional and trustworthy housemaids for all your cleaning and household needs. From daily chores to deep cleaning, we ensure your home stays fresh and organized.
+    Book now for a hassle-free, spotless home!💁‍♀️</div>
+</div>
+<script>
+    const text = document.getElementById("scrollingText");
+    let position = window.innerWidth; // Start off-screen
+
+    function scrollText() {
+        position -= 2; // Speed of scrolling
+        if (position < -text.offsetWidth) {
+            position = window.innerWidth; // Reset position
+        }
+        text.style.left = position + "px";
+        requestAnimationFrame(scrollText);
+    }
+
+    scrollText();
+</script>
+
 <!-- Navigation bar-->
 <div class="nav-container">
 <nav>
@@ -78,27 +100,27 @@
             
                 <!--Register Form -->
                 <form style="width: 28%; padding-left: 30px; margin-left: 100px; ">
-                    <label for="name" style="font-size: 20px;"><b>Full Name:</b></label>
-                    <input type="text" id="name" name="name" required style="width: 100%; height: 35px; font-size: 16px;">
+                    <label for="name" style="font-size: 20px; width: 100%; height: 40px; "><b>Full Name:</b></label>
+                    <input type="text" id="name" name="name" required style="width: 100%; height: 40px; font-size: 16px;">
             
                     <label for="email" style="font-size: 20px;"><b>Email:</b></label>
-                    <input type="email" id="email" name="email" required style="width: 100%; height: 35px; font-size: 16px;">
+                    <input type="email" id="email" name="email" required style="width: 100%; height: 40px; font-size: 16px;">
         
                     <label for="password" style="font-size: 20px;"><b>Address:</b></label>
-                    <input type="text" id="address" name="address" required style="width: 100%; height: 35px; font-size: 16px;">
+                    <input type="text" id="address" name="address" required style="width: 100%; height: 40px; font-size: 16px;">
         
                     <label for="confirm password" required style="font-size: 20px;"><b>Contact Number:</b></label>
-                    <input type="number" id="contact number" name="contact number" style="width: 100%; height: 35px; font-size: 16px;">
+                    <input type="number" id="contact number" name="contact number" style="width: 100%; height: 40px; font-size: 16px;">
 
 
                     <label for="worker Designation" required style="font-size: 30px; height: 50px;"></label>
-                    <input type="text" id="contact number" name="contact number" placeholder="Worker Designation" aria-placeholder="Full" style="width: 100%; height: 35px; font-size: 30px;">
+                    <input type="text" id="contact number" name="contact number" placeholder="Worker Designation" aria-placeholder="Full" style="width: 100%; height: 40px; font-size: 30px;">
 
                     
                     <!-- Buttons -->
                      <div class="grid-container">
-                    <button type="submit" style="width: 80%; height: 40px; font-size: 25px; margin-top: 20px; margin-left: 40px;"><b>Submit</b></button>
-                    <button type="reset" style="width: 80%; height: 40px; font-size: 25px; margin-top: 10px; margin-left: 40px;"><b>Reset</b></button>
+                    <button type="submit" style="width: 80%; height: 40px; font-size: 25px; margin-top: 20px; margin-left: 45px;"><b>Submit</b></button>
+                    <button type="reset" style="width: 80%; height: 40px; font-size: 25px; margin-top: 10px; margin-left: 45px;"><b>Reset</b></button>
                      </div>
                 </form>
             
@@ -114,9 +136,59 @@
     
 
     
-    <footer>
-
-    </footer>
+     <!-- "About" footer -->
+     <footer>
+        <div class="footer-container">
+           
+           <!-- About Us -->
+           <div class="footer-section">
+               <h3>About Us</h3>
+               <p>We are dedicated to providing top-quality services and ensuring customer satisfaction. Stay connected with us for the latest updates.</p>
+           </div>
+   
+           <!-- Quick Links -->
+           <div class="footer-section">
+               <h3>Quick Links</h3>
+               <ul>
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">About Us</a></li>
+                   <li><a href="#">Services</a></li>
+                   <li><a href="#">Contact</a></li>
+                   <li><a href="#">FAQs</a></li>
+               </ul>
+           </div>
+   
+           <!-- Contact Info -->
+           <div class="footer-section">
+               <h3>Contact Info</h3>
+               <ul>
+                   <li>Email: support@bualagbe.com</li>
+                   <li>Phone: +880202135423</li>
+                   <li>Address: 3-B,122,lane-2 #A gulshan 2, Dhaka-1212,Banglasgesh.</li>
+               </ul>
+           </div>
+   
+           <!-- Social Media -->
+           <div class="footer-section">
+               <h3>Follow Us</h3>
+               <div class="social-icons">
+                   <a href="#"><i class="fa fa-facebook"></i> Facebook</a>
+                   <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
+                   <a href="#"><i class="fa fa-instagram"></i> Instagram</a>
+                   <a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a>
+               </div>
+           </div>
+   
+       </div>
+   
+       <!-- Footer Bottom -->
+       <div class="footer-bottom">
+           &copy; 2025 bualagbe.com | All Rights Reserved | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
+       </div>
+   </footer>
+   
+   <!-- FontAwesome Icons (For Social Media) -->
+   <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-CDN.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

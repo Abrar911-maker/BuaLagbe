@@ -1,0 +1,17 @@
+.banner-container {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    color: white;
+    white-space: nowrap;
+    padding: 5px 0;
+    position: relative;
+}
+
+.banner-text {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    white-space: nowrap;
+}

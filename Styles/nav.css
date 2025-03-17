@@ -7,6 +7,7 @@
 nav{
  position: relative;
  height: 70px;
+ width: 100%;
  overflow: hidden;
  background-color: rgb(162, 79, 239);
  border-radius: 18px; 
@@ -15,18 +16,19 @@ nav{
  border-bottom: 13px solid purple;
  border-image: url('/Images/Backround\ image\ 2.jpg');
  margin-bottom: 0px;
+ margin-top: 0px;
 }
 
 nav > ul{
     display: flex;
     justify-content: center;
-    font-size: xx-large;
+    font-size: 30px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 nav li{
     list-style: none;
-    margin-right: 10pc;
+    margin-right: 5pc;
 }
 
 .backgroundhov:hover{
@@ -61,13 +63,14 @@ margin-left: 230px;
 }
 
 h1{
-    font-size: 60px;
+    font-size: 50px;
     color: white;
+    background-color: rgb(120, 32, 130);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: grid;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 60px;
+    margin-top: 55px;
+    margin-bottom: 0px;
 }
 
 h2{
