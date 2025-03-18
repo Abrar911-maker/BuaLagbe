@@ -11,7 +11,7 @@
         
         label{
         color: white;
-        margin-left: 10px;
+        margin-left: 60px;
         padding: 4px;
     }
 
@@ -33,9 +33,24 @@
 
     input{
         background-color:rgb(227, 254, 250);
-        margin: 8px;
+        margin: 5px;
         border: 2px solid black;
         border-radius: 8px;
+    }
+
+    fieldset{
+        border: 5px solid white;
+        border-radius: 15px;
+    }
+
+    legend{
+        display: grid;
+        font-size:xx-large;
+        color: white;
+        margin-left: 200px;
+        border-radius: 100px;
+        padding: 10px;
+        
     }
 
     </style>
@@ -88,26 +103,27 @@
  <main>
     <section>
         <div style="display: flex; justify-content: space-between; align-items: center; width: 95%; max-width: auto; margin: auto; padding: 0px; margin-top: 40px; border-radius: 30px; box-shadow: 0 0 100px rgb(241, 55, 238);border-image: url('/Images/Backround\ image\ 2.jpg');">
-        
+        <fieldset>
+            <legend>Login</legend>
             <!--Register Form -->
             <form style="width: 28%; padding-left: 30px; ">
                 
 
-                <label for="email" style="font-size: 20px;"><b>Email:</b></label>
-                <input type="email" id="email" name="email" required style="width: 100%; height: 35px; font-size: 16px;">
+                <label for="email" style="font-size: 20px;"></label>
+                <input type="email" id="email" name="email" placeholder="Email" aria-placeholder="full" required style="width: 400px; height: 40px; font-size: 28px;">
     
-                <label for="password" style="font-size: 20px;"><b>Password:</b></label>
-                <input type="password" id="password" name="password" required style="width: 100%; height: 35px; font-size: 16px;">
+                <label for="password" style="font-size: 20px;"></label>
+                <input type="password" id="password" name="password" placeholder="Password" aria-placeholder="full" required style="width: 400px; height: 40px; font-size: 28px;margin-left: 70px;">
     
     
                 <!-- Buttons -->
                 <div class="grid-container">
-                <button type="Login" style="width: 80%; height: 40px; font-size: 18px; margin-top: 10px; margin-left: 40px;"><b>Login</b></button>
-                <button type="reset" style="width: 80%; height: 40px; font-size: 18px; margin-top: 10px; margin-left: 40px;"><b>Reset</b></button>
+                <button type="Login" style="width: 120%; height: 35px; font-size: 25px; margin-top: 10px; margin-left: 120px;"><b>Login</b></button>
+                <button type="reset" style="width: 120%; height: 35px; font-size: 25px; margin-top: 10px; margin-left: 120px;"><b>Reset</b></button>
             </div>
 
             </form>
-        
+            </fieldset>
             <!-- Right side:Hi Image -->
             <img src="Images/Hi.png" alt="Right Image" style="width: 560px; height: auto; object-fit:contain; align-content: flex-start;">
     

@@ -39,7 +39,52 @@
             border-radius: 8px;
             margin-left: 50px;
         }
-    
+
+        textarea{
+            margin: 8px;
+            border: 2px solid black;
+            border-radius: 8px;
+            margin-left: 2px;
+        }
+        legend{
+            font-size: x-large;
+            display: grid;
+            text-align: center;
+            color: white;
+            margin: 5px 5px;
+        }
+        fieldset{
+            border: 5px solid white;
+            border-radius: 10px;
+        }
+
+        .radiobox{
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            size: 100px;
+        }
+
+        .monthly {
+            margin-left: 10%;
+            font-size: xx-large;
+
+        }
+
+        .weekly{
+            margin-left: 10px;
+            font-size:xx-large;
+        }
+
+        .hourly{
+            margin-left: 10px;
+            font-size:xx-large;
+        }
+
+        input[type="radio"] {
+            transform: scale(1.5); /* Increase size */
+            margin-right: 5px;
+        }
     
     </style>
 
@@ -99,29 +144,47 @@
             <div style="display: flex; justify-content: space-between;  width: auto; height:auto; max-width: auto; padding: 20px; margin-top: 50px; border-radius: 30px; box-shadow: 0 0 100px rgb(241, 55, 238);border-image: url('/Images/Backround\ image\ 2.jpg');">
             
                 <!--Register Form -->
-                <form style="width: 28%; padding-left: 30px; margin-left: 100px; ">
-                    <label for="name" style="font-size: 20px; width: 100%; height: 40px; "><b>Full Name:</b></label>
-                    <input type="text" id="name" name="name" required style="width: 100%; height: 40px; font-size: 16px;">
+                <form style="width: 28%; padding-left: 20px; margin-left: 100px; ">
+                    <label for="full Name" style="font-size: 20px; margin-left: -5px;"></label>
+                    <input type="text" id="full Name" name="full Name" placeholder="Full Name" aria-placeholder="Full" style="width: 100%; height: 40px; font-size: 28px;">
             
-                    <label for="email" style="font-size: 20px;"><b>Email:</b></label>
-                    <input type="email" id="email" name="email" required style="width: 100%; height: 40px; font-size: 16px;">
+                    <label for="email" style="font-size: 20px;"></label>
+                    <input type="text" id="email" name="email" placeholder="Email" aria-placeholder="Full" style="width: 100%; height: 40px; font-size: 28px;">
         
-                    <label for="password" style="font-size: 20px;"><b>Address:</b></label>
-                    <input type="text" id="address" name="address" required style="width: 100%; height: 40px; font-size: 16px;">
+                    <label for="address" style="font-size: 20px;"></label>
+                    <input type="text" id="address" name="address" placeholder="Address" aria-placeholder="Full" style="width: 100%; height: 40px; font-size: 28px;">
         
-                    <label for="confirm password" required style="font-size: 20px;"><b>Contact Number:</b></label>
-                    <input type="number" id="contact number" name="contact number" style="width: 100%; height: 40px; font-size: 16px;">
+                    <label for="confirm password" required style="font-size: 20px;"></label>
+                    <input type="text" id="contact number" name="contact number" placeholder="Contact Number" aria-placeholder="Full" style="width: 100%; height: 40px; font-size: 28px;">
 
+                    <fieldset>
+                        <legend>Worker Designation</legend>
+                    <label for="worker Designation" required style="font-size: 28px; height: 50px;"></label>
+                    <textarea rows="2" cols="25" type="text" id="contact number" name="contact number" style=" font-size: 30px; margin-left: -5px;"></textarea>
+                    </fieldset>
 
-                    <label for="worker Designation" required style="font-size: 30px; height: 50px;"></label>
-                    <input type="text" id="contact number" name="contact number" placeholder="Worker Designation" aria-placeholder="Full" style="width: 100%; height: 40px; font-size: 30px;">
+                    <!-- Radio tick box -->
+                    <div class="radiobox">
+                        <label for="monthly">
+                            <input type="radio" name="hairing duration method" id="monthly"><span class="monthly">Monthly</span>
+                          </label>
 
-                    
+                          <label for="weekly">
+                            <input type="radio" name="hairing duration method" id="weekly"><span class="weekly">Weekly</span>
+                          </label>
+
+                          <label for="hourly">
+                            <input type="radio" name="hairing duration method" id="hourly"><span class="hourly">Hourly</span>
+                          </label>
+                        </div>
+
                     <!-- Buttons -->
                      <div class="grid-container">
-                    <button type="submit" style="width: 80%; height: 40px; font-size: 25px; margin-top: 20px; margin-left: 45px;"><b>Submit</b></button>
-                    <button type="reset" style="width: 80%; height: 40px; font-size: 25px; margin-top: 10px; margin-left: 45px;"><b>Reset</b></button>
+                    <button type="submit" style="width: 80%; height: 40px; font-size: 25px; margin-top: 20px; margin-left: 90px;"><b>Submit</b></button>
+                    <button type="reset" style="width: 80%; height: 40px; font-size: 25px; margin-top: 10px; margin-left: 90px;"><b>Reset</b></button>
                      </div>
+                    
+
                 </form>
             
                 <!-- Right side:Hi Image -->
