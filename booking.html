@@ -10,6 +10,7 @@
      <link rel="stylesheet" href="Styles/border.css">
      <link rel="stylesheet" href="Styles/card.css">
      <link rel="stylesheet" href="Styles/banner.css">
+     <link rel="stylesheet" href="Styles/dropdown.css">
 
      <style>
     
@@ -141,7 +142,7 @@
 
     <main>
         <section>
-            <div style="display: flex; justify-content: space-between;  width: auto; height:auto; max-width: auto; padding: 20px; margin-top: 50px; border-radius: 30px; box-shadow: 0 0 100px rgb(241, 55, 238);border-image: url('/Images/Backround\ image\ 2.jpg');">
+            <div style="display: flex; justify-content: space-between;  width: auto; height:auto; max-width: auto; padding: 20px; margin-top :50px; margin-bottom: 50px; border-radius: 30px; box-shadow: 0 0 100px rgb(241, 55, 238);border-image: url('/Images/Backround\ image\ 2.jpg');">
             
                 <!--Register Form -->
                 <form style="width: 28%; padding-left: 20px; margin-left: 100px; ">
@@ -178,12 +179,39 @@
                           </label>
                         </div>
 
+
+                    <!-- Dropdow for time -->
+                    <div class="dropdown-container" style="width: 165%; height: 60px; font-size: 40px; margin:20px;">
+                    <label for="dropdown">Time</label>
+                    <select id="dropdown" style="width: 250%; height: 50px; font-size: 22px; margin:5px; border: 3px solid black; border-radius: 10px;">
+                    <option value="">Select the time</option>
+                    <option value="option1">9 AM - 11 PM</option>
+                    <option value="option2">10 AM - 12 PM</option>
+                    <option value="option3">11 AM - 01 PM</option>
+                    <option value="option4">12 PM- 02 PM</option>
+                    </select>
+
+                    <!-- Dropdow for days in a week -->
+                    <label for="dropdown">Weekly</label>
+                    <select id="dropdown" style="width: 255%; height: 50px; font-size: 22px; margin:5px; border: 3px solid black; border-radius: 10px;">
+                    <option value="">Days in a week</option>
+                    <option value="option1">1 days in a week</option>
+                    <option value="option2">2 days in a week</option>
+                    <option value="option3">3 days in a week</option>
+                    <option value="option4">4 days in a week</option>
+                    <option value="option4">5 days in a week</option>
+                    <option value="option4">6 days in a week</option>
+                    <option value="option4">7 days in a week</option>
+                    </select>
+
+                </div>
+
                     <!-- Buttons -->
                      <div class="grid-container">
                     <button type="submit" style="width: 80%; height: 40px; font-size: 25px; margin-top: 20px; margin-left: 90px;"><b>Submit</b></button>
                     <button type="reset" style="width: 80%; height: 40px; font-size: 25px; margin-top: 10px; margin-left: 90px;"><b>Reset</b></button>
-                     </div>
-                    
+                     </div> 
+
 
                 </form>
             
